@@ -41,10 +41,7 @@ function showAllCity() {
     })
 }
 function showCreateForm() {
-    $(`#create-city-title`).html("Thêm mới thành phố")
-    // let footer =   `<button class="btn btn-secondary" data-dismiss="modal" type="button">Đóng</button>
-    //                 <button class="btn btn-primary" onclick="createNewCity()" type="button">Tạo mới</button>`;
-    // $(`#create-city-footer`).html(footer);
+    $(`#create-city-title`).html("Add new City")
     $(`#name`).val(null);
     $(`#country`).val(null);
     $(`#area`).val(null);
@@ -111,7 +108,7 @@ function showEditForm(id) {
 }
 function editCity() {
     let name = $(`#name`).val();
-    let country = $(`#country`).val();
+    let country = $(`#country-option`).val();
     let area = $(`#area`).val();
     let population = $(`#population`).val();
     let gdp = $(`#gdp`).val();
